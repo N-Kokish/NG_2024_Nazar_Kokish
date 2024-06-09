@@ -5,39 +5,39 @@ using namespace std;
 int main()
 {
     char mathematical_operation;
-    double a,b;
+    double number_1,number_2;
     cout << "lead 2 numbers: " << endl;
     cout << "a:";
-    cin  >> a ;
+    cin  >> number_1 ;
     cout << "b:";
-    cin >> b ;
+    cin >> number_2 ;
     cout << "Choose the action you want to do with them (+,-,*,/,^,r(v):" << endl;
     cout << "mathematical operation: ";
     cin >> mathematical_operation;
     switch (mathematical_operation) {
     case '+':
-        cout << a << " + " << b << " = " << a+b << endl;
+        cout << number_1 << " + " << number_2 << " = " << number_1+number_2 << endl;
         break;
     case '-':
-        cout << a << " - " << b << " = " << a-b << endl;
+        cout << number_1 << " - " << number_2 << " = " << number_1-number_2 << endl;
         break;
     case '*':
-        cout << a << " * " << b << " = " << a*b << endl;
+        cout << number_1 << " * " << number_2 << " = " << number_1*number_2 << endl;
         break;
     case '/':
-        if (b!=0){
-            cout << a << " / " << b << " = " << a/b << endl;
+        if (number_2!=0){
+            cout << number_1 << " / " << number_2 << " = " << number_1/number_2 << endl;
         }else{
             cout << "You cannot divide by 0!!!!";
         }
         break;
     case '^':
-        cout << a  <<  "^" << b <<" = " << pow(a,  b) << endl;
-        cout << b  <<  "^" << a <<" = " << pow(b,  a) << endl;
+        cout << number_1  <<  "^" << number_2 <<" = " << pow(number_1,  number_2) << endl;
+        cout << number_2  <<  "^" << number_1 <<" = " << pow(number_2,  number_1) << endl;
         break;
     case 'r':
-        cout << "v" << a  << " = " << pow(a, 1.0 / 2) << endl;
-        cout << "v" << b  << " = " << pow(b, 1.0 / 2) << endl;
+        cout << "v" << number_1  << " = " << pow(number_1, 1.0 / 2) << endl;
+        cout << "v" << number_2  << " = " << pow(number_2, 1.0 / 2) << endl;
         break;
     default:
         cout << "You performed a mathematical operation incorrectly.( Please enter next time: +,-,*,/,^,r(v) )" << endl;
