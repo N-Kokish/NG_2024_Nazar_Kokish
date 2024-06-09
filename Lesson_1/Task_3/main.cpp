@@ -4,17 +4,17 @@ using namespace std;
 
 int main()
 {
-    int a;
+    int Salary;
     cout << "How much do you earn?" << endl;
-    cin  >> a ;
-    if (a < 1000){
+    cin  >> Salary ;
+    if (Salary < 1000){
         cout << "Work more!" << endl;
     }
-    if (a > 1000){
-        if (a >1000000){
+    if (Salary > 999){
+        if (Salary >999999){
             cout << "Yes, you are a millionaire!" << endl;
         }
-        if (a<1000000){
+        if (Salary<1000000){
             cout << "good job!" << endl;
         }
     }
