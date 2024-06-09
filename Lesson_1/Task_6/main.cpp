@@ -4,22 +4,22 @@ using namespace std;
 
 int main()
 {
-    int f=0,i=1,j=0,u=1;
+    int Christmas_tree_size=0,Current_row_of_leaves=1,space=0,star=1;
     cout << "Please measure the Christmas tree you want: ";
-    cin >> f;
+    cin >> Christmas_tree_size;
 
-    while (i<=f){
-        for (j = 0; j < f-i; ++j){
+    while (Current_row_of_leaves<=Christmas_tree_size){
+        for (space = 0; space < Christmas_tree_size-Current_row_of_leaves; ++space){
             cout << " ";
         }
         cout << "*";
-        for(u = 1; u < i; ++u){
+        for(star = 1; star < Current_row_of_leaves; ++star){
             cout << "**";
         }
         cout<<endl;
-        i=i+1;
+        Current_row_of_leaves=Current_row_of_leaves+1;
     }
-    for (j = 0; j < f-1; ++j){
+    for (space = 0; space < Christmas_tree_size-1; ++space){
         cout << " ";
     }
     cout << "*";
