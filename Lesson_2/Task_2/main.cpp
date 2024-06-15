@@ -10,7 +10,7 @@ int main()
         cout << "Enter value: ";
         cin >>array_numbers[number_index];
         if (maximum_numbers<array_numbers[number_index]){
-            maximum_numbers =array_numbers[number_index];
+            maximum_numbers =array_numbers[number_index] ;
             //maximum_account_index=number_index+1;
         }
         if (array_numbers[number_index]==0){
