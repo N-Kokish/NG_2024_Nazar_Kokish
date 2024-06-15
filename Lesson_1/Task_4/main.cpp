@@ -7,9 +7,9 @@ int main()
     char mathematical_operation;
     double number_1,number_2;
     cout << "lead 2 numbers: " << endl;
-    cout << "a:";
+    cout << "the first number :";
     cin  >> number_1 ;
-    cout << "b:";
+    cout << "the second number:";
     cin >> number_2 ;
     cout << "Choose the action you want to do with them (+,-,*,/,^,r(v):" << endl;
     cout << "mathematical operation: ";
