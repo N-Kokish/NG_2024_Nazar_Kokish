@@ -12,7 +12,8 @@ int main()
     int minimum_account_index=1;
     double account[10];
      for (int number = 0; number < 10; number++) {
-        account[number]=1000;
+        cout <<"Set initial cell values "<<number <<"in dollars : "<<endl;
+        cin >> account[number];
     }
     cout << "What is your account number?" << endl ;
     cin >>number;
