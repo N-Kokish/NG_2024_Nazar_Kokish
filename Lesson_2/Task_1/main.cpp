@@ -14,7 +14,7 @@ int main()
      for (int number = 0; number < 10; number++) {
         account[number]=1000;
     }
-    cout << "What is your account number?" << endl;
+    cout << "What is your account number?" << endl ;
     cin >>number;
     number=number-1;
     cout << number+1 <<" : " << account[number] << endl;
